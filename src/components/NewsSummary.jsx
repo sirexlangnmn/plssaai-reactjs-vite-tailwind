@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { useEffect } from 'react';
 import { news } from '../constants';
 import { ArticleSummary } from './index';
 const NewsSummary = () => {
+  useEffect(() => {
+		feather.replace();
+	}, []);
+
   return (
     <div className="container mt-16">
       <div className="grid md:grid-cols-12 grid-cols-1 pb-4 items-end">
@@ -30,7 +35,10 @@ const NewsSummary = () => {
                       </p>
                     </div>
                     <div className="mt-4">
-                      <a href={data.newsLink} className="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <i className="uil uil-arrow-right align-middle" /></a>
+                      <a href={data.newsLink} className="btn btn-link flex items-center text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">
+                      <span className="mr-2">Read More</span>
+                      <i data-feather="arrow-right" className="h-5 w-5 text-purple-600 align-inline" />
+                      </a>
                     </div>
                   </div>
                 </div>

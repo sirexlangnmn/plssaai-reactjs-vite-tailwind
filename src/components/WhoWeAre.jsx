@@ -39,7 +39,7 @@ const WhoWeAre = (props) => {
               <div id="years-in-service" >
               </div>
               <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">{txt_1}</h3>
-              <p className="text-slate-400 max-w-xl">
+              <p className="text-slate-400 max-w-xl text-justify">
                 {txt_2}
               </p>
               <div className="mt-6">

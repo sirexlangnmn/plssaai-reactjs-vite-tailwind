@@ -13,9 +13,9 @@ const Affiliations = () => {
 					<div className="lg:col-span-4 md:col-span-6 md:text-right hidden md:block">
 					</div>
 				</div>
-				<div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+				<div className="grid grid-cols-2 md:grid-cols-3 gap-8 ">
 					{sponsors.map((data) => (
-						<div key={data.id}>
+						<div key={data.id} className='rounded-lg shadow-md'>
 							<img className="h-auto max-w-full rounded-lg shadow-md" src={data.imgSrc} alt={data.imgAlt} />
 						</div>
 					))}

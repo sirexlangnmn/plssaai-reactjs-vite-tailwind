@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { useEffect } from 'react';
 import { logo2 } from '../assets';
 
 const Footer = () => {
+	useEffect(() => {
+		feather.replace();
+	}, []);
 	return (
 		<footer className="footer bg-dark-footer relative text-gray-200 dark:text-gray-200 mt-16">
 			<div className="container">
@@ -15,11 +19,21 @@ const Footer = () => {
 									</a>
 									<p className="mt-6 text-gray-300">KEEP IN TOUCH</p>
 									<ul className="list-none mt-6">
-										<li className="inline"><a href="http://linkedin.com/plssaai" target="_blank" className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i className="uil uil-linkedin" title="Linkedin" /></a></li>
-										<li className="inline"><a href="https://www.facebook.com/plssaai" target="_blank" className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i className="uil uil-facebook-f align-middle" title="facebook" /></a></li>
-										<li className="inline"><a href="https://www.instagram.com/plssaai/" target="_blank" className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i className="uil uil-instagram align-middle" title="instagram" /></a></li>
-										<li className="inline"><a href="https://twitter.com/plssaai" target="_blank" className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i className="uil uil-twitter align-middle" title="twitter" /></a></li>
-										<li className="inline"><a href="mailto:support@plssaai.in" className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i className="uil uil-envelope align-middle" title="email" /></a></li>
+										<li className="inline"><a href="http://linkedin.com/plssaai" target="_blank" className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+											<i data-feather="linkedin" className="h-5 w-5 text-gray-400" />
+										</a></li>
+										<li className="inline"><a href="https://www.facebook.com/plssaai" target="_blank" className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+											<i data-feather="facebook" className="h-5 w-5 text-gray-400" />
+											</a></li>
+										<li className="inline"><a href="https://www.instagram.com/plssaai/" target="_blank" className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+											<i data-feather="instagram" className="h-5 w-5 text-gray-400" />
+											</a></li>
+										<li className="inline"><a href="https://twitter.com/plssaai" target="_blank" className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+											<i data-feather="twitter" className="h-5 w-5 text-gray-400" />
+											</a></li>
+										<li className="inline"><a href="mailto:support@plssaai.in" className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+											<i data-feather="mail" className="h-5 w-5 text-gray-400" />
+											</a></li>
 									</ul>
 								</div>
 								<div className="lg:col-span-2 md:col-span-4">

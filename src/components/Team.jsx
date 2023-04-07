@@ -14,7 +14,7 @@ const Team = (props) => {
       <div className="container">
         <div className="grid grid-cols-1 pb-8 text-center mb-16">
           <h3 className="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium">{txt_1}</h3>
-          <p className="text-slate-400 max-w-xl mx-auto">
+          <p className="text-slate-400 max-w-xl mx-auto text-justify">
             {txt_2}
           </p>
         </div>

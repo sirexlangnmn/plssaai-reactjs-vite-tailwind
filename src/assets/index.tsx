@@ -17,6 +17,9 @@ import affiliations_07 from "./images/pls/affiliations/7.png";
 import sponsor_01 from "./images/sponsors/ing.png";
 import sponsor_02 from "./images/sponsors/civitan.png";
 import sponsor_03 from "./images/sponsors/ako2.png";
+import sponsor_04 from "./images/sponsors/qcu_1.png";
+import sponsor_05 from "./images/sponsors/qcu_2.png";
+import sponsor_06 from "./images/sponsors/qcu_3.png";
 import about_1 from "./images/about/ab01.jpg";
 import about_2 from "./images/about/ab02.jpg";
 import about_3 from "./images/about/ab03.jpg";
@@ -44,6 +47,9 @@ export {
   sponsor_01,
   sponsor_02,
   sponsor_03,
+  sponsor_04,
+  sponsor_05,
+  sponsor_06,
   about_1,
   about_2,
   about_3,

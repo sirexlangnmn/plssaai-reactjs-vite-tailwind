@@ -28,25 +28,26 @@ const WhoWeAreTwo = (props) => {
             <div className="lg:col-start-2 lg:col-span-10">
               <div className="relative">
                 <img src={imgSrc} className="rounded-md shadow-lg" alt={imgAlt} />
-                {/* <div className="absolute bottom-2/4 translate-y-2/4 right-0 left-0 text-center">
+                <div className="absolute bottom-2/4 translate-y-2/4 right-0 left-0 text-center">
                   <a href="#!" data-type="youtube" data-id="AeN060QnN68" className="lightbox h-20 w-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600">
                     <i data-feather="play-circle" className="h-8 w-8 text-purple-600 " />
                   </a>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
           <div className="content md:mt-8">
             <div className="grid lg:grid-cols-12 grid-cols-1 md:text-left text-center justify-center">
               <div className="lg:col-start-2 lg:col-span-10">
-                <div className="grid items-center">
+                <div className="grid md:grid-cols-2 grid-cols-1 items-center">
                   <div id="who-we-are-two-txt-1">
                   </div>
-                  <div className="text-justify">
+                  <div className="mt-8">
                     <div className="section-title text-md-start">
                       <p className="text-white max-w-xl mx-auto mb-2">
                         {txt_2}
                       </p>
+                      <a href={link} className="text-white">Read More <i className="uil uil-angle-right-b align-middle" /></a>
                     </div>
                   </div>
                 </div>

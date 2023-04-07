@@ -10,7 +10,7 @@ const HeroTwo = (props) => {
       <div className="container">
         <div className="grid grid-cols-1 pb-8 text-center mt-10">
           <h3 className="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">{txt_1}</h3>
-          <p className="text-slate-300 text-lg max-w-xl mx-auto">
+          <p className="text-slate-300 text-lg max-w-xl mx-auto text-justify">
             {txt_2}
           </p>
         </div>

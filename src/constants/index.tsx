@@ -21,6 +21,9 @@ import {
   sponsor_01,
   sponsor_02,
   sponsor_03,
+  sponsor_04,
+  sponsor_05,
+  sponsor_06,
   about_1,
   about_2,
   about_3,
@@ -176,13 +179,18 @@ export const sponsors = [
   },
   {
     id: uuidv4(),
-    imgSrc: sponsor_01,
-    imgAlt: 'ING | PLS Scholarship Alumni Association Inc.',
+    imgSrc: sponsor_04,
+    imgAlt: 'Quezon City University | PLS Scholarship Alumni Association Inc.',
   },
   {
     id: uuidv4(),
-    imgSrc: sponsor_01,
-    imgAlt: 'ING | PLS Scholarship Alumni Association Inc.',
+    imgSrc: sponsor_05,
+    imgAlt: 'Quezon City University - BSIT | PLS Scholarship Alumni Association Inc.',
+  },
+  {
+    id: uuidv4(),
+    imgSrc: sponsor_06,
+    imgAlt: 'Quezon City University - BSEM | PLS Scholarship Alumni Association Inc.',
   },
 ];
 
@@ -218,10 +226,7 @@ export const whoWeAre = [
 export const whoWeAreTwo = [
   {
     id: uuidv4(),
-    txt_1: `<div class="section-title text-md-start">
-    <h6 class="text-white/50 text-lg font-semibold">Team</h6>
-    <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white mt-2">Meet Experience <br> Team Member</h3>
-    </div>`,
+    txt_1: ``,
     txt_2:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     imgSrc: about_4,
@@ -578,5 +583,18 @@ export const partners = [
     instagramLinkId: uuidv4(),
     twitterLinkId: uuidv4(),
     linkedinLinkId: uuidv4(),
+  },
+];
+
+export const blogsAndNews = [
+  {
+    id: uuidv4(),
+    title: 'Banque Raiffeisen Donation 2018',
+    short_description: 'On 28th May, PLS was awarded 5000€ by the Raiffeisen Bank Luxembourg. The Banque Raiffeisen regularly gives donations to local...',
+    description:
+      'Support of education for underprivileged children to receive a quality education',
+    imgSrc: blog_01,
+    imgAlt: 'SCHOLARSHIP PROGRAM | PLS Scholarship Alumni Association Inc.',
+    link: '#',
   },
 ];

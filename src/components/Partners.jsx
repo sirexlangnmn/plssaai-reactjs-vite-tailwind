@@ -18,7 +18,7 @@ const Partners = (props) => {
         <div className="grid grid-cols-1 pb-8 text-center my-10">
           <h6 className="mb-4 text-base font-medium text-indigo-600">{txt_1}</h6>
           <h3 className="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium">{txt_2}</h3>
-          <p className="text-slate-400 max-w-xl mx-auto">
+          <p className="text-slate-400 max-w-xl mx-auto text-justify">
             {txt_3}
           </p>
         </div>
