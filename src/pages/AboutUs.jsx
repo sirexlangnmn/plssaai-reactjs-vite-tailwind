@@ -3,14 +3,17 @@ import { Navbar, HeroTwo, WhoWeAre, WhoWeAreTwo, Team, Partners, Footer, BackToT
 import { aboutUs, whoWeAre, whoWeAreTwo, team, teamText, partners, partnersText } from '../constants';
 
 const AboutUs = () => {
+  const heroTwoData = aboutUs;
+  const teamData = team;
+  const teamTextData = teamText;
   return (
     <>
     <div>
       <Navbar />
-      <HeroTwo aboutUs={aboutUs} />
+      <HeroTwo heroTwoData={heroTwoData} />
       <WhoWeAre whoWeAre={whoWeAre} />
       <WhoWeAreTwo whoWeAreTwo={whoWeAreTwo} />
-      <Team team={team} teamText={teamText} />
+      <Team teamData={teamData} teamTextData={teamTextData} />
       <Partners partners={partners} partnersText={partnersText}/>
       <Footer />
       <BackToTop />

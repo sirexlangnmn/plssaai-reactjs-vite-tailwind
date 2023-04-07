@@ -1,19 +1,22 @@
 import React from 'react'
-import { Navbar, HeroTwo, WhoWeAre, WhoWeAreTwo, Team, Partners, Footer, BackToTop } from '../components';
-import { aboutUs, whoWeAre, whoWeAreTwo, team, teamText, partners, partnersText } from '../constants';
+import { Navbar, HeroTwo, Card, Footer, BackToTop } from '../components';
+import { blogsText, blogsAndNews } from '../constants';
 
 const BlogsAndNews = () => {
+  const heroTwoData = blogsText;
+  const cardData = blogsAndNews;
   return (
     <>
      <div>
       <Navbar />
-      <HeroTwo aboutUs={aboutUs} />
-      <WhoWeAre whoWeAre={whoWeAre} />
+      <HeroTwo heroTwoData={heroTwoData} />
+      <Card cardData={cardData} />
+      {/* <WhoWeAre whoWeAre={whoWeAre} />
       <WhoWeAreTwo whoWeAreTwo={whoWeAreTwo} />
       <Team team={team} teamText={teamText} />
-      <Partners partners={partners} partnersText={partnersText}/>
+      <Partners partners={partners} partnersText={partnersText}/>*/}
       <Footer />
-      <BackToTop />
+      <BackToTop /> 
     </div>
     </>
   )

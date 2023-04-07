@@ -12,5 +12,6 @@ export { default as WhoWeAre } from './WhoWeAre';
 export { default as WhoWeAreTwo } from './WhoWeAreTwo';
 export { default as Team } from './Team';
 export { default as Partners } from './Partners';
+export { default as Card } from './Card';
 // export { default as Stories } from './Stories';
 // 

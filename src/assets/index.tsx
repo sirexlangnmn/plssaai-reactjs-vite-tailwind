@@ -3,6 +3,7 @@ import logo2 from "./images/logo/pls2.png";
 import blog_01 from "./images/blog/01.jpg";
 import blog_02 from "./images/blog/02.jpg";
 import blog_03 from "./images/blog/03.jpg";
+import blog_04 from "./images/blog/Banque_Raiffeisen_Donation_2018.jpg";
 import admission_ads_img from "./images/pls/home/admission.png";
 import news_01 from "./images/blog/01.jpg";
 import news_02 from "./images/blog/02.jpg";
@@ -33,6 +34,7 @@ export {
   blog_01,
   blog_02,
   blog_03,
+  blog_04,
   admission_ads_img,
   news_01,
   news_02,

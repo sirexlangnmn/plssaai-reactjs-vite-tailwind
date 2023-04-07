@@ -7,6 +7,7 @@ import {
   blog_01,
   blog_02,
   blog_03,
+  blog_04,
   admission_ads_img,
   news_01,
   news_02,
@@ -200,7 +201,7 @@ export const aboutUs = [
     txt_1: 'About Us',
     txt_2:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
-    imgBg: '../../assets/images/company/aboutus.jpg',
+    imgBg: '../../assets/images/team.jpg',
   },
 ];
 
@@ -586,6 +587,17 @@ export const partners = [
   },
 ];
 
+
+export const blogsText = [
+  {
+    id: uuidv4(),
+    txt_1: 'Blogs & News',
+    txt_2:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+    imgBg:  '../../assets/images/blog/bg.jpg',
+  },
+];
+
 export const blogsAndNews = [
   {
     id: uuidv4(),
@@ -593,8 +605,49 @@ export const blogsAndNews = [
     short_description: 'On 28th May, PLS was awarded 5000€ by the Raiffeisen Bank Luxembourg. The Banque Raiffeisen regularly gives donations to local...',
     description:
       'Support of education for underprivileged children to receive a quality education',
-    imgSrc: blog_01,
+    imgSrc: blog_04,
     imgAlt: 'SCHOLARSHIP PROGRAM | PLS Scholarship Alumni Association Inc.',
     link: '#',
+  },
+  {
+    id: uuidv4(),
+    title: 'Banque Raiffeisen Donation 2018',
+    short_description: 'On 28th May, PLS was awarded 5000€ by the Raiffeisen Bank Luxembourg. The Banque Raiffeisen regularly gives donations to local...',
+    description:
+      'Support of education for underprivileged children to receive a quality education',
+    imgSrc: blog_04,
+    imgAlt: 'SCHOLARSHIP PROGRAM | PLS Scholarship Alumni Association Inc.',
+    link: '#',
+  },
+  {
+    id: uuidv4(),
+    title: 'Banque Raiffeisen Donation 2018',
+    short_description: 'On 28th May, PLS was awarded 5000€ by the Raiffeisen Bank Luxembourg. The Banque Raiffeisen regularly gives donations to local...',
+    description:
+      'Support of education for underprivileged children to receive a quality education',
+    imgSrc: blog_04,
+    imgAlt: 'SCHOLARSHIP PROGRAM | PLS Scholarship Alumni Association Inc.',
+    link: '#',
+  },
+  {
+    id: uuidv4(),
+    title: 'Banque Raiffeisen Donation 2018',
+    short_description: 'On 28th May, PLS was awarded 5000€ by the Raiffeisen Bank Luxembourg. The Banque Raiffeisen regularly gives donations to local...',
+    description:
+      'Support of education for underprivileged children to receive a quality education',
+    imgSrc: blog_04,
+    imgAlt: 'SCHOLARSHIP PROGRAM | PLS Scholarship Alumni Association Inc.',
+    link: '#',
+  },
+];
+
+
+export const scholarsText = [
+  {
+    id: uuidv4(),
+    txt_1: 'Scholars',
+    txt_2:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+    imgBg: '../../assets/images/company/aboutus.jpg',
   },
 ];

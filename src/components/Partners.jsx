@@ -5,9 +5,6 @@ const Partners = (props) => {
   const { txt_1, txt_2, txt_3 } = props.partnersText[0];
   const partners = props.partners;
 
-  console.log('Partners partners', partners);
-  console.log('Partners txt_1 txt_1', txt_1, txt_2);
-
   useEffect(() => {
     feather.replace();
   }, []);

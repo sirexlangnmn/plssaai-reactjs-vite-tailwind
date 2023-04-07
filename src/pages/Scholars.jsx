@@ -1,15 +1,22 @@
 import React from 'react'
-import { Navbar, Hero, AboutSummary, AdmissionAds, NewsSummary, Affiliations, Footer, BackToTop } from '../components';
+import { Navbar, HeroTwo, Footer, BackToTop } from '../components';
+import { scholarsText, blogsAndNews } from '../constants';
 
 const Scholars = () => {
+  const heroTwoData = scholarsText;
+
   return (
     <>
-    <div>
+     <div>
       <Navbar />
+      <HeroTwo heroTwoData={heroTwoData} />
+      {/* <WhoWeAre whoWeAre={whoWeAre} />
+      <WhoWeAreTwo whoWeAreTwo={whoWeAreTwo} />
+      <Team team={team} teamText={teamText} />
+      <Partners partners={partners} partnersText={partnersText}/>*/}
+      <Footer />
+      <BackToTop /> 
     </div>
-    <h1 class="text-3xl font-bold underline">
-        Scholars
-    </h1>
     </>
   )
 }

@@ -2,8 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 
 const Team = (props) => {
-  const { txt_1, txt_2 } = props.teamText[0];
-  const team = props.team;
+  const { txt_1, txt_2 } = props.teamTextData[0];
+  const team = props.teamData;
 
   useEffect(() => {
     feather.replace();
