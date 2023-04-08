@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { hostname } from './utils/hostname-utils';
 
 const CardBlogs = (props) => {
+  console.log('hostname', hostname);
   const card_data = props.cardData;
-  console.log('CardBlogs card_data', card_data)
 
   return (
     <section className="relative md:py-24 py-16">
