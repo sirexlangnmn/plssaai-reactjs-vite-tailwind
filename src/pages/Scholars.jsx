@@ -1,6 +1,6 @@
 import React from 'react'
-import { Navbar, HeroTwo, Footer, BackToTop } from '../components';
-import { scholarsText, blogsAndNews } from '../constants';
+import { Navbar, HeroTwo, Footer, BackToTop, Switcher } from '../components';
+import { scholarsText } from '../constants';
 
 const Scholars = () => {
   const heroTwoData = scholarsText;
@@ -10,12 +10,9 @@ const Scholars = () => {
      <div>
       <Navbar />
       <HeroTwo heroTwoData={heroTwoData} />
-      {/* <WhoWeAre whoWeAre={whoWeAre} />
-      <WhoWeAreTwo whoWeAreTwo={whoWeAreTwo} />
-      <Team team={team} teamText={teamText} />
-      <Partners partners={partners} partnersText={partnersText}/>*/}
       <Footer />
-      <BackToTop /> 
+      <BackToTop />
+      <Switcher />
     </div>
     </>
   )

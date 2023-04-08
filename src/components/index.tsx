@@ -10,8 +10,10 @@ export { default as Footer } from './Footer';
 export { default as BackToTop } from './BackToTop';
 export { default as WhoWeAre } from './WhoWeAre';
 export { default as WhoWeAreTwo } from './WhoWeAreTwo';
-export { default as Team } from './Team';
-export { default as Partners } from './Partners';
-export { default as Card } from './Card';
-// export { default as Stories } from './Stories';
-// 
+export { default as CardTeam } from './CardTeam';
+export { default as CardPartners } from './CardPartners';
+export { default as CardBlogs } from './CardBlogs';
+export { default as Switcher } from './Switcher';
+export { default as DisplayDetailsOne } from './DisplayDetailsOne';
+export { default as DisplayDetailsTwo } from './DisplayDetailsTwo';
+

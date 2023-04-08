@@ -1,14 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useWindowScroll } from 'react-use';
 import classNames from 'classnames';
 import { navLinks } from '../constants';
 import { logo1, logo2 } from '../assets';
 
 const Navbar = () => {
-	const [active, setActive] = useState('Home 1');
+	// get the current route then call the function activeToggle to have blue underscore the current route.
+	const location = useLocation();
+	useEffect(() => {
+		const pathName = location.pathname;
+		if (pathName) {
+			const link = navLinks.find((l) => l.link === pathName);
+			if(link) {
+				activeToggle(link.id);
+			}
+		}
+	}, []);
+
+
 	const [scrolled, setScrolled] = useState(false);
 	const [isSmallScreen, setIsSmallScreen] = useState(false);
+
 
 	const { y } = useWindowScroll();
 
@@ -66,7 +79,7 @@ const Navbar = () => {
 		{ '': !isSmallScreen, 'text-black': isSmallScreen },
 	);
 
-	function activeToogle(title) {
+	function activeToggle(elementId) {
 		const listItems = document.querySelectorAll('#navigation ul li');
 
 		listItems.forEach((item) => {
@@ -76,7 +89,7 @@ const Navbar = () => {
 			}
 		});
 
-		const element = document.getElementById(title);
+		const element = document.getElementById(elementId);
 		const underscore = document.createElement('span');
 		underscore.style.position = 'absolute';
 		underscore.style.bottom = '0px'
@@ -98,15 +111,15 @@ const Navbar = () => {
 	}
 
 
+
 	return (
 		<>
 			<nav id="topnav" className={navClasses}>
 				<div className="container">
 					<a className="logo pl-0" href="#">
-					<img id="nav-logo" className=" dark:inline-block" alt="LOGO | PLS Scholarship Alumni Association Inc."
+						<img id="nav-logo" className=" dark:inline-block" alt="LOGO | PLS Scholarship Alumni Association Inc."
 							style={{ height: '70px' }} />
 					</a>
-
 					<div className="menu-extras">
 						<div className="menu-item">
 							<a className="navbar-toggle" id="isToggle" onClick={toggleMenu} >
@@ -118,22 +131,20 @@ const Navbar = () => {
 							</a>
 						</div>
 					</div>
-
 					<div id="navigation">
 						<ul className="navigation-menu nav-light">
 							{navLinks.map((link) => (
-								<li key={link.id} onClick={() => activeToogle(link.id)}>
+								<li key={link.id} >
 									<Link
 										id={link.id}
 										key={link.id}
 										to={link.link}
-										className={`${active === link.title ? 'text-white' : 'text-gray-100'} hover:text-white text-[18px] font-medium cursor-pointer sub-menu-item`}
+										className='text-white hover:text-white text-[18px] font-medium cursor-pointer sub-menu-item'
 									>
 										{link.title}
 									</Link>
 								</li>
 							))}
-
 							{/* <li className="has-submenu parent-menu-item">
 								<a href="#">Nav 1.1</a><span className="menu-arrow"></span>
 								<ul className="submenu">
@@ -143,10 +154,8 @@ const Navbar = () => {
 							</li> */}
 						</ul>
 					</div>
-
 				</div>
 			</nav>
-
 		</>
 	)
 }

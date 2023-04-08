@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, HeroTwo, WhoWeAre, WhoWeAreTwo, Team, Partners, Footer, BackToTop } from '../components';
+import { Navbar, HeroTwo, WhoWeAre, WhoWeAreTwo, CardTeam, CardPartners, Footer, BackToTop, Switcher } from '../components';
 import { aboutUs, whoWeAre, whoWeAreTwo, team, teamText, partners, partnersText } from '../constants';
 
 const AboutUs = () => {
@@ -13,10 +13,11 @@ const AboutUs = () => {
       <HeroTwo heroTwoData={heroTwoData} />
       <WhoWeAre whoWeAre={whoWeAre} />
       <WhoWeAreTwo whoWeAreTwo={whoWeAreTwo} />
-      <Team teamData={teamData} teamTextData={teamTextData} />
-      <Partners partners={partners} partnersText={partnersText}/>
+      <CardTeam teamData={teamData} teamTextData={teamTextData} />
+      <CardPartners partners={partners} partnersText={partnersText}/>
       <Footer />
       <BackToTop />
+      <Switcher />
     </div>
     </>
   )

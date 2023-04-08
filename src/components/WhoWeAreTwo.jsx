@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const WhoWeAreTwo = (props) => {
   const data = props.whoWeAreTwo;
@@ -7,12 +6,12 @@ const WhoWeAreTwo = (props) => {
 
   
   const [txt1, setTxt1] = useState({
-    txt_1
+    txt_2
   });
 
   useEffect(() => {
     const element = document.getElementById("who-we-are-two-txt-1");
-    element.innerHTML = txt_1;
+    element.innerHTML = txt_2;
   }, [txt1]);
 
   useEffect(() => {
@@ -40,13 +39,15 @@ const WhoWeAreTwo = (props) => {
             <div className="grid lg:grid-cols-12 grid-cols-1 md:text-left text-center justify-center">
               <div className="lg:col-start-2 lg:col-span-10">
                 <div className="grid items-center">
-                  <div id="who-we-are-two-txt-1">
-                  </div>
+                  {/* <div id="who-we-are-two-txt-1">
+                  </div> */}
                   <div className="text-justify">
                     <div className="section-title text-md-start">
-                      <p className="text-white max-w-xl mx-auto mb-2">
+                      {/* <p className="text-white max-w-xl mx-auto mb-2">
                         {txt_2}
-                      </p>
+                      </p> */}
+                      <div className="text-white max-w-xl mx-auto mb-2" id="who-we-are-two-txt-1">
+                      </div>
                     </div>
                   </div>
                 </div>

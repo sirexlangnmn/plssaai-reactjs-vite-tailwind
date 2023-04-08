@@ -7,7 +7,7 @@ const Footer = () => {
 		feather.replace();
 	}, []);
 	return (
-		<footer className="footer bg-dark-footer relative text-gray-200 dark:text-gray-200 mt-16">
+		<footer className="footer bg-dark-footer relative text-gray-200 dark:text-gray-200">
 			<div className="container">
 				<div className="grid grid-cols-12">
 					<div className="col-span-12">

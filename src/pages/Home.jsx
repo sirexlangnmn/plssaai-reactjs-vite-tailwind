@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Hero, AboutSummary, AdmissionAds, NewsSummary, Affiliations, Footer, BackToTop } from '../components';
+import { Navbar, Hero, AboutSummary, AdmissionAds, NewsSummary, Affiliations, Footer, BackToTop, Switcher } from '../components';
 
 
 const Home = () => {
@@ -10,10 +10,11 @@ const Home = () => {
       <Hero />
       <AboutSummary />
       <AdmissionAds />
-      <NewsSummary />
+      {/* <NewsSummary /> */}
       <Affiliations />
       <Footer />
       <BackToTop />
+      <Switcher />
     </div>
     </>
   )

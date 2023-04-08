@@ -20,7 +20,7 @@ const AdmissionAds = () => {
                 {description}
                 </p>
                 <div className="mt-6 mb-6">
-                  <a href={applyLink} className="btn bg-indigo-700 hover:bg-indigo-500 border-indigo-700 hover:border-indigo-500 text-white rounded-md mr-2 mt-2">
+                  <a href={applyLink} className="btn bg-indigo-700 hover:bg-indigo-500 border-indigo-700 hover:border-indigo-500 text-white rounded-md mr-2 mt-2 transition-all duration-500 hover:scale-105 ease-in-out">
                     {btnText}
                   </a>
                 </div>
