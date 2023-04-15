@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { hostname } from './utils/hostname-utils';
 
 const CardBlogs = (props) => {
-  console.log('hostname', hostname);
   const card_data = props.cardData;
 
   return (

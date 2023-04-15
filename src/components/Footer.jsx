@@ -83,8 +83,9 @@ const Footer = () => {
 				<div className="container text-center">
 					<div className="grid md:grid-cols-2 items-center">
 						<div className="md:text-left text-center">
-							<p className="mb-0">©
-								PLS Scholarship Alumni Association Inc. design with <i className="mdi mdi-heart text-red-600" />.
+							<p className="flex items-center"> &nbsp;
+									© PLS Scholarship Alumni Association Inc. design with 
+									<i data-feather="heart" className="text-red-600 ml-1 h-5 w-5" />
 							</p>
 						</div>
 					</div>

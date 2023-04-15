@@ -1,12 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom'
 import { Navbar, HeroTwo, DisplayDetailsTwo, Footer, BackToTop, Switcher } from '../components';
-import { aboutPLS, blogsText } from '../constants';
+import { aboutPLS } from '../constants';
+import { blogsText } from '../data/blogs';
+
 const AboutPLS = () => {
   const { id } = useParams();
   const heroTwoData = blogsText;
 
-  console.log('AboutPLS id:', id);
   return (
     <>
     <div>

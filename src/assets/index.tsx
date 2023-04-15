@@ -4,7 +4,7 @@ import blog_01 from "./images/blog/01.jpg";
 import blog_02 from "./images/blog/02.jpg";
 import blog_03 from "./images/blog/03.jpg";
 import blog_04 from "./images/blog/ING-Solidarity-Awards-2017.jpg";
-import blog_05 from "./images/blog/Banque_Raiffeisen_Donation_2018.jpg";
+import blog_05 from "./images/blog/Banque_Raiffeisen_Donation_2018.webp";
 import blog_06 from "./images/blog/graduate-2022.png";
 import blog_07 from "./images/blog/Festival-des-Nation-2022-in-Grevenmacher.webp";
 import admission_ads_img from "./images/pls/home/admission.png";

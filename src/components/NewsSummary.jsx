@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { blogsAndNews } from '../constants';
+import { blogsAndNews } from '../data/blogs';
 import { ArticleSummary } from './index';
 
 const NewsSummary = () => {

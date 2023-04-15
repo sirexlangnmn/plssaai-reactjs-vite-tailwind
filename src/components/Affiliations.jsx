@@ -1,5 +1,5 @@
 import React from 'react'
-import { sponsors } from '../constants';
+import { sponsors } from '../data/sponsors';
 
 const Affiliations = () => {
 

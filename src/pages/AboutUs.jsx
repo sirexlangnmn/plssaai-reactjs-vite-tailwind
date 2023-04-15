@@ -1,6 +1,8 @@
 import React from 'react'
 import { Navbar, HeroTwo, WhoWeAre, WhoWeAreTwo, CardTeam, CardPartners, Footer, BackToTop, Switcher } from '../components';
-import { aboutUs, whoWeAre, whoWeAreTwo, team, teamText, partners, partnersText } from '../constants';
+import { aboutUs, whoWeAre, whoWeAreTwo } from '../constants';
+import { team, teamText } from '../data/team';
+import { partners, partnersText } from '../data/partners';
 
 const AboutUs = () => {
   const heroTwoData = aboutUs;

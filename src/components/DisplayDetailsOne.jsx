@@ -1,6 +1,6 @@
 import React, { useState, useEffect }  from 'react';
 import { ArticleSummary } from './index';
-import { blogsText, blogsAndNews } from '../constants';
+import { blogsText, blogsAndNews } from '../data/blogs';
 import { formatDate } from './utils/date-utils';
 
 const DisplayDetailsOne = (props) => {

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { Navbar, HeroTwo, Footer, BackToTop, Switcher } from '../components';
-import { scholarsText } from '../data/scholars';
+import { humanitarianAidText } from '../data/humanitarian';
 
-const Scholars = () => {
-  const heroTwoData = scholarsText;
+const HumanitarianAid = () => {
+  const heroTwoData = humanitarianAidText;
 
   return (
     <>
@@ -18,4 +18,4 @@ const Scholars = () => {
   )
 }
 
-export default Scholars
+export default HumanitarianAid
